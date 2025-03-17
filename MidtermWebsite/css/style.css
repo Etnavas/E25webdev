@@ -1,0 +1,31 @@
+@import url(../Home_Page/index.html);
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    min-height: 900px;
+    border: 8px solid #283618;
+    display: grid;
+    flex-wrap: wrap;
+    background-color: #fefae0;
+    text-decoration-color: #283618;
+  }
+
+  h1 {
+    text-align: left;
+    font-family: 'Times New Roman', Times, serif;
+  }
+
+  .container {
+    
+  }
+
+  .box {
+    height: 150px;
+    width: 150px;
+    background-color: #606c38;
+  }

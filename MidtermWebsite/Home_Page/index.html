@@ -7,35 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title>Gallery Website</title>
-    <style> 
-
-    body {
-      min-height: 900px;
-      border: 5px solid black;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      align-items: center;
-    }
-
-    .Navbar {
-      list-style: none;
-    }
-
-    .box {
-      height: 150px;
-      width: 150px;
-      background-color: aquamarine;
-    }
-
-    
-    </style>
+    <link rel="stylesheet" href="/Users/pigeons/Desktop/Webdev-stuff/E25webdev/MidtermWebsite/css/style.css">
   </head>
   <body>
     <header>
         <H1>Art Gallery</H1>
     </header>
-    <div class="Navbar">
+    <div class="navbar">
         <nav>
             <ul>
               <li><a href="link1"></a>Art Work</li>
@@ -44,10 +22,12 @@
             </ul>
         </nav>
     </div>
-    <div class="box one">1</div>
-    <div class="box two">2</div>
-    <div class="box three">3</div>
-    <div class="box four">4</div>
+    <main class="container">
+      <div class="box" style="grid-area: box-1;">1</div>
+      <div class="box" style="grid-area: box-2;">2</div>
+      <div class="box" style="grid-area: box-3;">3</div>
+      <div class="box" style="grid-area: box-4;">4</div>
+    </main>
     <footer></footer>
   </body>
 </html>
