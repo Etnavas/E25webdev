@@ -8,62 +8,130 @@ body {
     background-color: #fefae0;
 }
 
-li, a {
+body {
+    min-height: 100vh;
+    background-color: #fefae0;
+  }
+
+  h1 {
+    font-family: Geneva, Verdana, Tahoma, sans-serif;
+  }
+
+  img {
+    display: flex;
+    align-content: center;
+  }
+  
+  li, a {
     text-decoration: none;
     font-family: 'Times New Roman', Times, serif;
     font-weight: 500;
     font-size: 16px;
     color: #4f772d;
-}
-
-header h1 {
+  }
+  
+  header h1 {
     font-family: 'Times New Roman', Times, serif;
     font-weight: 800;
     font-size: 30px;
     color: #4f772d;
     background-color: #132a13;
-}
-
-header {  
-    height: 50px;
+  }
+  
+  header {  
+   height: 50px;
+   min-width: 100vh;
    display: flex;
    justify-content: space-between;
    align-items: center;
    padding: 30px 10%;
    background-color: #132a13;
-}
-
-nav ul {
+  }
+  
+  nav ul {
     display: flex;
     background-color: #132a13;
-}
-
-.navbar li {
+  }
+  
+  .navbar li {
     list-style: none;
     display: inline-block;
     padding: 0px 20px;
     background-color: #132a13;
-}
-
-.navbar li a {
+  }
+  
+  .navbar li a {
     transition: all 0.3s ease 0s;
-}
-
-.navbar li a:hover {
+  }
+  
+  .navbar li a:hover {
     color: #fb8500;
-}
+  }
 
-main {
-    display: grid;
-    grid-template-rows: max-content;
-    grid-template-columns: max-content
+.container {
+    display: flex;
+    padding: 12rem;
+    justify-content: center;
+    align-content: center;
 }
 
 .aboutme {
-    grid-row: 3/5;
-    grid-column: ;
-    width: 600px;
-    height: 300px;
+    width: 900px;
+    height: 400px;
     background-color: #4f772d;
     border: 5px solid #132a13;
+
+}
+
+h2 {
+    padding: 30px 20px 20px 30px;
+
+}
+
+p {
+    padding: 0px 30px;
+
+}
+
+.myboy img {
+   height: 400px;
+   width: 400px;
+
+}
+
+@media screen and (max-width: 768px) {
+    header h1 {
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: 800;
+        font-size: 25px;
+        color: #4f772d;
+        background-color: #132a13;
+    }
+
+    li, a {
+        text-decoration: none;
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: 500;
+        font-size: 28px;
+        color: #4f772d;
+      }
+
+    .container {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    
+    .aboutme {
+        width: 600px;
+        height: 600px;
+        background-color: #4f772d;
+        border: 5px solid #132a13;
+    
+    }
+    .myboy img {
+        height: 400px;
+        width: 400px;
+     
+     }
 }
