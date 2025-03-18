@@ -3,16 +3,17 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    
 }
 
 body {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    min-height: 900px;
+    min-height: 100vh;
     border: 8px solid #283618;
     display: grid;
     flex-wrap: wrap;
     background-color: #fefae0;
-    text-decoration-color: #283618;
   }
 
   h1 {
@@ -21,11 +22,35 @@ body {
   }
 
   .container {
-    
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
   }
 
   .box {
     height: 150px;
     width: 150px;
     background-color: #606c38;
+    border: 3px solid black;
+  }
+
+  .one {
+    flex: 1;
+  }
+
+  header {
+    display: flex;
+    align-items: self-start;
+
+
+
+  }
+
+  nav ul {
+    list-style-type: none;
+  }
+
+  .contact ul {
+    list-style-type: none;
   }
