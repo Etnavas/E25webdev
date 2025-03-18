@@ -2,6 +2,9 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+}
+
+body {
     background-color: #fefae0;
 }
 
@@ -22,11 +25,17 @@ header h1 {
 }
 
 header {  
+    height: 50px;
    display: flex;
    justify-content: space-between;
    align-items: center;
    padding: 30px 10%;
    background-color: #132a13;
+}
+
+nav ul {
+    display: flex;
+    background-color: #132a13;
 }
 
 .navbar li {
@@ -40,6 +49,21 @@ header {
     transition: all 0.3s ease 0s;
 }
 
-#navbar li a:hover {
+.navbar li a:hover {
     color: #fb8500;
+}
+
+main {
+    display: grid;
+    grid-template-rows: max-content;
+    grid-template-columns: max-content
+}
+
+.aboutme {
+    grid-row: 3/5;
+    grid-column: ;
+    width: 600px;
+    height: 300px;
+    background-color: #4f772d;
+    border: 5px solid #132a13;
 }
