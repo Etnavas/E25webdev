@@ -25,8 +25,8 @@ body {
   li, a {
     text-decoration: none;
     font-family: 'Times New Roman', Times, serif;
-    font-weight: 500;
-    font-size: 16px;
+    font-weight: 600;
+    font-size: 26px;
     color: #4f772d;
   }
   
@@ -70,7 +70,7 @@ body {
 
 .container {
     display: flex;
-    padding: 12rem;
+    padding: 4.3rem;
     justify-content: center;
     align-content: center;
 }
@@ -79,59 +79,93 @@ body {
     width: 900px;
     height: 400px;
     background-color: #4f772d;
-    border: 5px solid #132a13;
+    border: 5px #132a13 solid;
 
 }
 
 h2 {
     padding: 30px 20px 20px 30px;
+    font-size: 43px;
 
 }
 
 p {
+    font-size: 30px;
+    line-height: 31px;
     padding: 0px 30px;
+    text-align: left;
 
 }
 
 .myboy img {
+    margin-right: 20px;
    height: 400px;
    width: 400px;
 
 }
 
 @media screen and (max-width: 768px) {
-    header h1 {
+   
+    header {  
+        height: 200px;
+        min-width: 100vh;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #132a13;
+       }
+  
+       header h1 {
         font-family: 'Times New Roman', Times, serif;
         font-weight: 800;
-        font-size: 25px;
+        font-size: 50px;
         color: #4f772d;
         background-color: #132a13;
-    }
-
-    li, a {
+      }
+      
+      li, a {
         text-decoration: none;
         font-family: 'Times New Roman', Times, serif;
         font-weight: 500;
-        font-size: 28px;
+        font-size: 35px;
         color: #4f772d;
       }
 
+   
+  
+
+      h2 {
+        padding: 30px 20px 10px 30px;
+        font-size: 50px;
+    
+    }
+    
+    p {
+        font-size: 35px;
+        line-height: 50px;
+        padding: 0px 30px;
+        text-align: start;
+    
+    }
+
     .container {
         display: flex;
+        margin-left: 50px;
         justify-content: center;
         flex-direction: column;
     }
     
     .aboutme {
-        width: 600px;
-        height: 600px;
+        width: 700px;
+        height: 800px;
         background-color: #4f772d;
         border: 5px solid #132a13;
     
     }
     .myboy img {
-        height: 400px;
-        width: 400px;
+        padding-bottom: 40px;
+        height: 700px;
+        width: 700px;
      
      }
 }

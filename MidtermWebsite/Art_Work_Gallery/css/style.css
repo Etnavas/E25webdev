@@ -6,7 +6,7 @@
 
   
   body {
-    min-height: 100vh;
+    
     background-color: #fefae0;
   }
 
@@ -22,8 +22,8 @@
   li, a {
     text-decoration: none;
     font-family: 'Times New Roman', Times, serif;
-    font-weight: 500;
-    font-size: 16px;
+    font-weight: 600;
+    font-size: 22px;
     color: #4f772d;
   }
   
@@ -37,7 +37,6 @@
   
   header {  
    height: 50px;
-   min-width: 100vh;
    display: flex;
    justify-content: space-between;
    align-items: center;
@@ -65,10 +64,15 @@
     color: #fb8500;
   }
 
+  .container {
+    display: flex;
+    align-items: center;
+  }
+
+  /* Classes that allow to simplify grid */
   .grid-col-span-2 {
     grid-column: span 2;
   }
-
   .grid-row-span-2 {
     grid-row: span 2;
   }
@@ -76,6 +80,7 @@
   .Boxes {
     padding: 30px;
     display: grid;
+    /* Simplify Columns */
     grid-template-columns: repeat(4, 1fr) ;
     margin: 0 auto;
     gap: 10px;
@@ -152,7 +157,6 @@
     border: 3px solid#132a13;
     width: 300px;
     height: 200px;
-    position: relative;
 
   }
   .four img {
@@ -243,22 +247,41 @@
   }
 
   @media screen and (max-width: 768px) {
+
+    header {  
+      height: 200px;
+      min-width: 100vh;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 30px 10%;
+      background-color: #132a13;
+     }
+
+     header h1 {
+      font-family: 'Times New Roman', Times, serif;
+      font-weight: 800;
+      font-size: 50px;
+      color: #4f772d;
+      background-color: #132a13;
+    }
     
     li, a {
       text-decoration: none;
       font-family: 'Times New Roman', Times, serif;
       font-weight: 500;
-      font-size: 28px;
+      font-size: 35px;
       color: #4f772d;
     }
 
     
     .Boxes {
       margin-left: 27px;
-      padding: 40px;
+      padding: 40px 150px;
       display: flex;
       justify-content: center;
       flex-direction: column;
+      gap: 50px;
     }
 
     h3 {
@@ -330,6 +353,7 @@
     border: 3px solid#132a13;
     width: 610px;
     height: 410px;
+    
 
   }
   .four img {
