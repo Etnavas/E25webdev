@@ -1,0 +1,42 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+    margin: 50px;
+    min-height: 100vh;
+    background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: white 7px;
+    border-style: dotted;
+  }
+
+  .container {
+    display: flex;
+  }
+
+    .container li {
+        list-style: none;
+        font-family: 'Barrio', 'Times New Roman', Times, serif;
+    }
+
+    nav ul {
+    display: flex;
+    gap: 60px;
+  }
+
+li, a {
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 35px;
+        color: white;
+      }
+
+.container li a:hover {
+        color: red;
+      }

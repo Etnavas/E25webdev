@@ -5,7 +5,7 @@
 }
 
 body {
-    margin: 30px;
+    margin: 50px;
     min-height: 100vh;
     background: #000;
     font-family: sans-serif;
@@ -31,6 +31,13 @@ body {
     margin: 30px;
     color: white;
     font-size: 50px;
+  }
+
+  h3 {
+    color: white;
+    font-family: 'Love Ya Like A Sister', 'Times New Roman', Times, serif;
+    font-size: 30px;
+    margin-bottom: 10px;
   }
   
   .container {
@@ -110,8 +117,10 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: row;
     margin: 100px;
     margin-top: 0;
+    margin-bottom: 180px;
   }
 
   .container2 img {
@@ -125,6 +134,7 @@ body {
     color: white;
     font-family: 'Love Ya Like A Sister', 'Times New Roman', Times, serif;
     font-size: 25px;
+    line-height: 160%;
   }
 
   input[type=text], select, textarea {
@@ -156,4 +166,43 @@ body {
     background-color: black; 
     padding: 20px;
     margin-bottom: 100px;
+    width: 700px;
+  }
+
+  
+
+  @media screen and (max-width: 768px)  {
+    
+    .container2 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      margin: 100px;
+      margin-top: 0;
+      margin-bottom: 180px;
+    }
+
+    .container2 img {
+      height: 300px;
+      width: 300px;
+      border: white dotted 3px;
+      margin-bottom: 60px;
+      
+
+    }
+
+    .container2 h2 {
+      justify-content: center;
+    }
+    
+    .container2 p {
+      color: white;
+      font-family: 'Love Ya Like A Sister', 'Times New Roman', Times, serif;
+      font-size: 25px;
+      line-height: 200%;
+    }
+  
+
+    
   }
