@@ -1,171 +1,159 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    background-color: #fefae0;
-}
-
-body {
+    margin: 30px;
     min-height: 100vh;
-    background-color: #fefae0;
+    background: #000;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: white 7px;
+    border-style: dotted;
   }
 
   h1 {
-    font-family: Geneva, Verdana, Tahoma, sans-serif;
+    font-family: 'Love Ya Like A Sister', 'Times New Roman', Times, serif;
+    margin-top: 9vmin;
+    margin-bottom: 10px;
+    padding: 0;
+    color: white;
+    font-size: 100px;
   }
 
-  img {
+  h2 {
+    font-family: 'Barrio', 'Times New Roman', Times, serif;
+    margin: 30px;
+    color: white;
+    font-size: 50px;
+  }
+  
+  .container {
     display: flex;
-    align-content: center;
-  }
-  
-  li, a {
-    text-decoration: none;
-    font-family: 'Times New Roman', Times, serif;
-    font-weight: 600;
-    font-size: 26px;
-    color: #4f772d;
-  }
-  
-  header h1 {
-    font-family: 'Times New Roman', Times, serif;
-    font-weight: 800;
-    font-size: 30px;
-    color: #4f772d;
-    background-color: #132a13;
-  }
-  
-  header {  
-   height: 50px;
-   min-width: 100vh;
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
-   padding: 30px 10%;
-   background-color: #132a13;
-  }
-  
-  nav ul {
-    display: flex;
-    background-color: #132a13;
-  }
-  
-  .navbar li {
-    list-style: none;
-    display: inline-block;
-    padding: 0px 20px;
-    background-color: #132a13;
-  }
-  
-  .navbar li a {
-    transition: all 0.3s ease 0s;
-  }
-  
-  .navbar li a:hover {
-    color: #fb8500;
-  }
-
-.container {
-    display: flex;
-    padding: 4.3rem;
     justify-content: center;
-    align-content: center;
-}
+    align-items: self-end;
+    margin: 100px;
+    margin-top: 3px;
+    margin-bottom: 110px;
+    height: 350px;
+    overflow: hidden;
+    ;
+  }
 
-.aboutme {
-    width: 900px;
-    height: 400px;
-    background-color: #4f772d;
-    border: 5px #132a13 solid;
+  .card__head a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Barrio', 'Times New Roman', Times, serif;
+    font-weight: 600px;
+  }
 
-}
 
-h2 {
-    padding: 30px 20px 20px 30px;
-    font-size: 43px;
+  .card__head a:hover {
+    text-decoration: none;
+    color: red;
+    font-family: 'Barrio', 'Times New Roman', Times, serif;
+    font-weight: 600px;
+  }
 
-}
+  .container .card {
+    flex: 1;
+    transition: all 1s ease-in-out;
+    height: 75vmin;
+    position: relative;
+  }
+  .container .card .card__head {
+    color: black;
+    background: red;
+    padding: 0.5em;
+    transform: rotate(-90deg);
+    transform-origin: 0% 0%;
+    transition: all 0.5s ease-in-out;
+    min-width: 100%;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-size: 1em;
+    white-space: nowrap;
+  }
+  .container .card:hover {
+    flex-grow: 10;
+  }
+  .container .card:hover img {
+    filter: grayscale(0);
+  }
+  .container .card:hover .card__head {
+    text-align: center;
+    top: calc(100% - 2em);
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
+    font-size: 2em;
+    transform: rotate(0deg) skew(-5deg);
+  }
+  .container .card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 1s ease-in-out;
+    filter: grayscale(100%);
+  }
+  .container .card:not(:nth-child(5)) {
+    margin-right: 1em;
+  }
 
-p {
-    font-size: 30px;
-    line-height: 31px;
-    padding: 0px 30px;
-    text-align: left;
+  .container2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 100px;
+    margin-top: 0;
+  }
 
-}
+  .container2 img {
+    height: 300px;
+    width: 300px;
+    border: white dotted 3px;
+    margin-right: 30px;
+  }
 
-.myboy img {
-    margin-right: 20px;
-   height: 400px;
-   width: 400px;
+  .container2 p {
+    color: white;
+    font-family: 'Love Ya Like A Sister', 'Times New Roman', Times, serif;
+    font-size: 25px;
+  }
 
-}
-
-@media screen and (max-width: 768px) {
-   
-    header {  
-        height: 200px;
-        min-width: 100vh;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        background-color: #132a13;
-       }
+  input[type=text], select, textarea {
+    width: 100%; 
+    padding: 12px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    box-sizing: border-box; 
+    margin-top: 6px; 
+    margin-bottom: 16px; 
+    resize: vertical 
+  }
   
-       header h1 {
-        font-family: 'Times New Roman', Times, serif;
-        font-weight: 800;
-        font-size: 50px;
-        color: #4f772d;
-        background-color: #132a13;
-      }
-      
-      li, a {
-        text-decoration: none;
-        font-family: 'Times New Roman', Times, serif;
-        font-weight: 500;
-        font-size: 35px;
-        color: #4f772d;
-      }
-
-   
+  input[type=submit] {
+    background-color: red;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
   
-
-      h2 {
-        padding: 30px 20px 10px 30px;
-        font-size: 50px;
-    
-    }
-    
-    p {
-        font-size: 35px;
-        line-height: 50px;
-        padding: 0px 30px;
-        text-align: start;
-    
-    }
-
-    .container {
-        display: flex;
-        margin-left: 50px;
-        justify-content: center;
-        flex-direction: column;
-    }
-    
-    .aboutme {
-        width: 700px;
-        height: 800px;
-        background-color: #4f772d;
-        border: 5px solid #132a13;
-    
-    }
-    .myboy img {
-        padding-bottom: 40px;
-        height: 700px;
-        width: 700px;
-     
-     }
-}
+  input[type=submit]:hover {
+    background-color: red;
+  }
+  
+  #ContactMe {
+    border-radius: 5px;
+    background-color: black; 
+    padding: 20px;
+    margin-bottom: 100px;
+  }
