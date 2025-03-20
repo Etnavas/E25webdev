@@ -202,6 +202,14 @@ body {
       font-size: 25px;
       line-height: 200%;
     }
+
+    #ContactMe {
+      border-radius: 5px;
+      background-color: black; 
+      padding: 20px;
+      margin-bottom: 100px;
+      width: 500px;
+    }
   
 
     
