@@ -1,0 +1,123 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+      margin: 50px;
+      min-height: 100vh;
+      background: #000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      border: white 7px;
+      border-style: dotted;
+    }
+  
+    h1 {
+      font-family: 'Love Ya Like A Sister', 'Times New Roman', Times, serif;
+      margin-top: 9vmin;
+      margin-bottom: 10px;
+      padding: 0;
+      color: white;
+      font-size: 100px;
+    }
+
+    .container {
+        display: flex;
+        margin: 50px;
+      }
+    
+        .container li {
+            list-style: none;
+            font-family: 'Barrio', 'Times New Roman', Times, serif;
+        }
+    
+        nav ul {
+        display: flex;
+        gap: 60px;
+      }
+    
+    li, a {
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 35px;
+            color: white;
+          }
+    
+    .container li a:hover {
+            color: red;
+          }
+
+    .container2 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin: 100px;
+            margin-top: 50px;
+        }
+
+        .wrapper {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            margin: 100px;
+        }
+
+        .wrapper1 {
+            margin-right: 100px;
+        }
+
+        .wrapper2 {
+            margin-left: 100px;
+        }
+
+        .wrapper1 img {
+          min-height: 300px;
+          
+      }
+    
+
+@media screen and (max-width: 768px)  {
+
+            body {
+                margin: 20px;
+              }
+        
+            .container {
+                display: flex;
+                margin: 50px;
+                margin-bottom: 0;
+              }
+        
+            nav ul {
+                display: flex;
+                gap: 20px;
+              }
+            
+            li, a {
+                    text-decoration: none;
+                    font-weight: 800;
+                    font-size: 23px;
+                    color: white;
+                  } 
+
+                  .wrapper {
+                    display: flex;
+                    justify-content: center;
+                    flex-direction: column;
+                    margin: 100px;
+                }
+        
+                .wrapper1 {
+                    margin-right: 100px;
+                    
+                }
+
+                .wrapper2 {
+                    margin-left: 100px;
+                }
+}
