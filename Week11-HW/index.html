@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magic 8 Ball</title>
+    <style type="text/css">
+        body {
+            display: flex;
+            text-align: center;
+            justify-content: space-evenly;
+            background-color: lightskyblue;
+
+        }
+
+        h1 {
+            font-size: 80px;
+        }
+
+        h2 {
+            font-size: 30px;
+        }
+        
+        img {
+            height: 500px;
+            width: 500px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Magic 8 Ball</h1>
+        <h2>Ask Me Anything!</h2>
+
+        <button id="btn">Click Me!</button>
+
+        <div id="response">"Your Fortune"</div>
+
+    </div>
+    <div>
+        <img src="/Users/pigeons/Desktop/Webdev-stuff/E25webdev/Week11-HW/01f1a2e43356ede7c4da79ccd4c00bf1.png" alt="8_Ball">
+    </div>
+
+    <script type="text/javascript">
+
+        let btn = document.getElementById('btn');
+        let response = document.getElementById('response')
+
+        let quote = ['It is certain','It is decidedly so','Without a doubt',
+            'Yes definitely','You may rely on it','As I see it, yes','Most likely','Absolutely',
+            'yeah.. idk about that','Yes','Signs point to yes','Reply hazy, try again','Ask again later',
+            'Better not tell you now lol','Cannot predict now','Idk ask someone else','Concentrate and ask again',
+            'no lol','My reply is no','no (womp womp)','My sources say no','Outlook not so good',
+            'Very doubtful','how about no lol',
+        ];
+
+        var randomFortune = quote[Math.floor(Math.random())* quote.length]
+
+        console.log(typeof randomFortune);
+
+        btn.addEventListener('click', randomFortune)
+
+        response.innerHTML = randomFortune
+        
+    
+
+    </script>
+</body>
+</html>
