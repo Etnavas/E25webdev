@@ -25,16 +25,24 @@
             height: 500px;
             width: 500px;
         }
+
+        .box {
+            height: 500px;
+            width: 500px;
+            text-align: center;
+        }
     </style>
 </head>
 <body>
-    <div>
+    <div class="container">
         <h1>Magic 8 Ball</h1>
         <h2>Ask Me Anything!</h2>
 
         <button id="btn">Click Me!</button>
 
-        <div id="response">"Your Fortune"</div>
+        <div class="box">
+            <p id="response">your fortune</p>
+        </div>
 
     </div>
     <div>
@@ -43,27 +51,43 @@
 
     <script type="text/javascript">
 
-        let btn = document.getElementById('btn');
-        let response = document.getElementById('response')
-
-        let quote = ['It is certain','It is decidedly so','Without a doubt',
-            'Yes definitely','You may rely on it','As I see it, yes','Most likely','Absolutely',
-            'yeah.. idk about that','Yes','Signs point to yes','Reply hazy, try again','Ask again later',
-            'Better not tell you now lol','Cannot predict now','Idk ask someone else','Concentrate and ask again',
-            'no lol','My reply is no','no (womp womp)','My sources say no','Outlook not so good',
-            'Very doubtful','how about no lol',
+        const answersArray = [
+            'It is certain',
+            'It is decidedly so',
+            'Without a doubt',
+            'Yes definitely',
+            'You may rely on it',
+            'As I see it, yes',
+            'Most likely',
+            'Absolutely',
+            'yeah.. idk about that',
+            'Yes','Signs point to yes',
+            'Reply hazy, try again',
+            'Ask again later',
+            'Better not tell you now lol',
+            'Cannot predict now',
+            'Idk ask someone else',
+            'Concentrate and ask again',
+            'no lol',
+            'My reply is no',
+            'no (womp womp)',
+            'My sources say no',
+            'Outlook not so good',
+            'Very doubtful',
+            'how about no lol',
         ];
 
-        var randomFortune = quote[Math.floor(Math.random())* quote.length]
+        const randomAnswers = document.getElementById('response');
 
-        console.log(typeof randomFortune);
+        function newFortune() {
+            randomAnswers.textContent = answersArray[Math.floor(Math.random() * 24)]
+        }
 
-        btn.addEventListener('click', randomFortune)
-
-        response.innerHTML = randomFortune
+        const button = document.getElementById('btn')
         
-    
+        button.addEventListener ('click',randomAnswers())
 
+        
     </script>
 </body>
 </html>
