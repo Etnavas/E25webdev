@@ -27,6 +27,16 @@ h3 {
    color: #FFE8D6;
 }
 
+h4 {
+   color: #FFE8D6;
+   font-family: 'Urbanist','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+h5 {
+   color: #FFE8D6;
+   font-family: 'Urbanist','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
 p { 
    font-family: 'Urbanist','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
    color: #FFE8D6;
@@ -40,8 +50,6 @@ nav {
   padding-left: 50px;
 
 }
-
-
 .content {
    display: flex;
    justify-content: space-evenly;
@@ -59,11 +67,35 @@ nav {
    border-radius: 5%;
 }
 
+.songLibrary h2 {
+   padding: 10px;
+}
+
+.popList h3 {
+   padding: 10px;
+   padding-top: 0;
+   padding-left: 20px;
+
+}
+
+.s-container {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-evenly;
+   gap: 20px;
+}
+
+.image {
+height: 150px;
+width: 150px;
+}
+
 .playing {
    height: 100vh;;
    width: 30%;
    display: flex;
    flex-direction: column;
+   border-radius: 2%;
 }
 
 .Playlist {
@@ -73,7 +105,58 @@ nav {
    padding: 20px;
    border:  #474A3C 1px solid;
    border-radius: 5%;
+   display: flex;
+   align-items: center;
+   justify-content: space-evenly;
 
+
+}
+
+.contact {
+   display: flex;
+   flex-direction: column;
+   align-self: start;
+   gap: 15px;
+}
+
+.contactTittle h2 {
+   font-family: 'Urbanist','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   color: #FFE8D6;
+}
+
+.contact-inputs:focus {
+   border: 2px sandybrown solid;
+}
+
+.contact-inputs::placeholder {
+color: #a9a9a9;
+}
+
+.contact-inputs {
+height: 28px;
+border: none;
+outline: none;
+padding-left: 25px;
+font-weight: 500;
+border-radius: 30px;
+}
+
+.contact textarea {
+   height: 50px;
+   border-radius: 20px;
+   padding-top: 10px;
+}
+
+.contact button {
+   display: flex;
+   align-self: center;
+   padding: 5px 10px;
+   color: #FFE8D6;
+   gap: 5px;
+   border: none;
+   border-radius: 50px;
+   background-color: #474A3C;
+   cursor: pointer;
 }
 
 .player {
@@ -192,6 +275,7 @@ i.fa-shuffle {
 .rotate {
    animation: rotation 8s infinite linear;
 }
+
 @keyframes rotation {
    from {
      transform: rotate(0deg);
