@@ -1,175 +1,191 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    
-  }
-
- body {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    font-family: 'Urbanist','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    background-color: #A5A58D;
-    padding: 10px;
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+   
  }
 
- h1 {
-    font-family: 'Tilt Warp','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: #FFE8D6;
-    font-size: xx-large;
- }
-
- h2 {
-    color: #FFE8D6;
- }
-
- h3 {
-    color: #FFE8D6;
- }
-
- p { 
-    font-family: 'Urbanist','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: #FFE8D6;
- }
-
- nav {
-   display: flex;
-   justify-content: flex-start;
-   align-items: center;
-   gap: 10px;
-   padding-left: 50px;
-
- }
-
-
- .content {
-    display: flex;
-    justify-content: space-evenly;
-    margin: 10px;
- }
-
- .songLibrary {
-    height: 100vh;
-    width: 60%;
-    background-color: #6B705C;
-    padding: 20px;
-    border:  #474A3C 1px solid;
-    display: flex;
-    flex-direction: column;
-    border-radius: 5%;
+body {
+   margin-top: 10px;
+   margin-bottom: 10px;
+   font-family: 'Urbanist','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   background-color: #A5A58D;
+   padding: 10px;
 }
 
- .playing {
-    height: 100vh;;
-    width: 30%;
-    display: flex;
-    flex-direction: column;
- }
+h1 {
+   font-family: 'Tilt Warp','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   color: #FFE8D6;
+   font-size: xx-large;
+}
 
- .Playlist {
-    background-color: #6B705C;
-    width: 100%;
-    height: 60%;
-    padding: 20px;
-    border:  #474A3C 1px solid;
-    border-radius: 5%;
+h2 {
+   color: #FFE8D6;
+}
 
- }
+h3 {
+   color: #FFE8D6;
+}
 
- .player {
-    background-color: #6B705C;
-    width: 100%;
-    height: 40%;
-    padding: 20px;
-    margin-top: 30px;
-    border:  #474A3C 0.5px solid;
-    border-radius: 5%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+p { 
+   font-family: 'Urbanist','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   color: #FFE8D6;
+}
 
- }
+nav {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  padding-left: 50px;
 
- .details {
+}
+
+
+.content {
    display: flex;
-   align-items: center;
+   justify-content: space-evenly;
+   margin: 10px;
+}
+
+.songLibrary {
+   height: 100vh;
+   width: 60%;
+   background-color: #6B705C;
+   padding: 20px;
+   border:  #474A3C 1px solid;
+   display: flex;
    flex-direction: column;
-   justify-content: center;
-   margin-top: 25px;
- }
+   border-radius: 5%;
+}
 
- .track-art {
-   margin: 25px;
-   height: 250px;
-   width: 250px;
-   background-image: URL(
-      "/Users/pigeons/Desktop/Webdev-stuff/E25webdev/FinalProject/music_website/Library_&_Home/images/artur-aldyrkhanov-u159a2eL6UE-unsplash.jpg");
-   background-size: cover;
-   background-position: center;
-   border-radius: 15%;
- }
+.playing {
+   height: 100vh;;
+   width: 30%;
+   display: flex;
+   flex-direction: column;
+}
 
- .now-playing {
-   font-size: 1rem;
- }
- 
- .track-name {
-   font-size: 3rem;
-   font-size: 1.5rem;
-   font-family: 'Urbanist','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: #FFE8D6;
- }
- 
- .track-artist {
-   font-size: 1.5rem;
-   font-family: 'Urbanist','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: #FFE8D6;
- }
+.Playlist {
+   background-color: #6B705C;
+   width: 100%;
+   height: 50%;
+   padding: 20px;
+   border:  #474A3C 1px solid;
+   border-radius: 5%;
 
- .buttons {
+}
+
+.player {
+   background-color: #6B705C;
+   width: 100%;
+   height: 50%;
+   padding: 20px;
+   margin-top: 30px;
+   border:  #474A3C 0.5px solid;
+   border-radius: 5%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+
+}
+
+.details {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 25px;
+}
+
+.track-art {
+  margin: 25px;
+  height: 250px;
+  width: 250px;
+  background-image: URL(
+     "/Users/pigeons/Desktop/Webdev-stuff/E25webdev/FinalProject/music_website/Library_&_Home/images/artur-aldyrkhanov-u159a2eL6UE-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+  border-radius: 15%;
+}
+
+.now-playing {
+  font-size: 1rem;
+}
+
+.track-name {
+  font-size: 3rem;
+  font-size: 1.5rem;
+  font-family: 'Urbanist','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   color: #FFE8D6;
+}
+
+.track-artist {
+  font-size: 1.5rem;
+  font-family: 'Urbanist','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   color: #FFE8D6;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.btnOne {
+   display: flex;
+
+}
+
+.btnTwo {
    display: flex;
    flex-direction: row;
-   align-items: center;
- }
- 
- .playpause-track,
- .prev-track,
- .next-track {
-   padding: 25px;
-   opacity: 0.8;
-   transition: opacity .2s;
- }
+}
 
- .playpause-track:hover,
+.playpause-track,
+.prev-track,
+.next-track,
+.random-track,
+.repeat-track {
+  padding: 25px;
+  opacity: 0.8;
+  transition: opacity .2s;
+}
+
+.playpause-track:hover,
 .prev-track:hover,
-.next-track:hover {
-  opacity: 5.0;
+.next-track:hover,
+.random-track,
+.repeat-track {
+ opacity: 5.0;
 }
 
 .slider_container {
-   width: 75%;
-   max-width: 400px;
-   display: flex;
-   justify-content: center;
-   align-items: center;
+  width: 75%;
+  max-width: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
- .seek_slider:hover {
-   opacity: 1.0;
+.seek_slider:hover {
+  opacity: 1.0;
 }
 
- .seek_slider {
-   width: 60%;
-   color: #FFE8D6;
- }
+.seek_slider {
+  width: 60%;
+  color: #FFE8D6;
+}
 
 .current-time,
 .total-duration {
-  padding: 10px;
+ padding: 10px;
 }
 
 i.fa-play-circle,
 i.fa-pause-circle,
 i.fa-step-forward,
-i.fa-step-backward {
-  cursor: pointer;
+i.fa-step-backward,
+i.fa-repeat,
+i.fa-shuffle {
+ cursor: pointer;
 }
