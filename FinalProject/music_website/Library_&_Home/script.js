@@ -110,6 +110,8 @@ function pauseTrack(){
     wave.classList.remove('loader');
     playpause_btn.innerHTML = '<i class="fa fa-play-circle fa-5x"></i>';
 }
+
+//figure out if shuffle is working at all 
 function nextTrack(){
     if(track_index < music_list.length - 1 && isRandom === false){
         track_index += 1;
@@ -131,13 +133,8 @@ function prevTrack(){
     loadTrack(track_index);
     playTrack();
 }
-function seekTo(){
-    let seekto = curr_track.duration * (seek_slider.value / 100);
-    curr_track.currentTime = seekto;
-}
-function setVolume(){
-    curr_track.volume = volume_slider.value / 100;
-}
+
+//find why the song progress bar wont work
 function setUpdate(){
     let seekPosition = 0;
     if(!isNaN(curr_track.duration)){
