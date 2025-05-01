@@ -18,44 +18,47 @@
     <div class="logoPage">
         <i class="fa-solid fa-headphones-simple fa-2xl" style="color: #000000;"></i>
     </div>  
-    <h1>SongPlay</h1>
+    <h1>SoundDesk</h1>
 </nav>
 <div class="content">
     <div class="songLibrary">
         <h2>Library</h2>
-        <div class="popList">
-            <h3>Pop</h3>
+       
+        <form action="">
 
-        </div>
-        <div class="rockList">
-            <h3>Rock</h3>
+            <input type="hidden" id='hidden_token'>
+            <div>
+                <label for="Genre" class="form-label col-sm-2">Genre:</label>
+                <select name="" id="select_genre" class="form-control form-control-sm col-sm-10">
+                    <option>Select...</option>                    
+                </select>
+            </div>
+            <div>
+                <label for="Genre">Playlists:</label>
+                <select name="" id="select_playlist">
+                    <option>Select...</option>                    
+                </select>
+            </div>                  
+            <div>
+                <button type="submit" id="btn_submit">Search</button>
+            </div>          
+        </form>     
 
-        </div>
-        <div class="rapList">
-            <h3>Rap</h3>
+        <div class="row">
+            <div>
+                <div class="list-group song-list">
+                    
+                </div>                                             
+            </div>
+            <div id="song-detail">                
+            </div>
+        </div> 
 
-        </div>
-        <div class="indieList">
-            <h3>Indie</h3>
-
-        </div>
-        <div class="altList">
-            <h3>Alternative</h3>
-
-        </div>
-        <div class="r&bList">
-            <h3>R&B</h3>
-
-        </div>
-        <div class="k-popList">
-            <h3>Kpop</h3>
-
-        </div>
     </div>
 
 <div class="playing">
     <div class="Playlist">
-        <p>placeholder</p>
+
 
     </div>
 
@@ -95,8 +98,6 @@
 
     
 <!-- funtions to add: 
- - Spotify API (figure it out)
- - add to playlist buttons 
  - playing funtions/buttons 
  - shuffle 
  - playlist shuffle 
