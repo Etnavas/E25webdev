@@ -72,6 +72,14 @@
 
            <div class="buttons">
 
+            <div class="slider_container">
+                <div class="current-time">00:00</div>
+                  <input type="range" min="1" max="100"
+                    value="0" class="seek_slider" onchange="seekTo()">
+                 <div class="total-duration">00:00</div>
+              </div>
+             </div>
+
             <div class="btnOne">
                 <div class="prev-track" onclick="prevTrack()">
                     <i class="fa-solid fa-forward-step fa-flip-horizontal fa-xl" style="color: #ffe8d6;"></i>
@@ -82,15 +90,8 @@
                 <div class="next-track" onclick="nextTrack()">
                     <i class="fa-solid fa-forward-step fa-flip-vertical fa-xl" style="color: #ffe8d6;"></i>
                 </div>
+                
             </div>
-
-             <div class="slider_container">
-                <div class="current-time">00:00</div>
-                  <input type="range" min="1" max="100"
-                    value="0" class="seek_slider" onchange="seekTo()">
-                 <div class="total-duration">00:00</div>
-              </div>
-             </div>
 
             <div class="btnTwo">
                 <div class="random-track" onclick="randomTrack()">
@@ -101,12 +102,6 @@
                     <i class="fa-solid fa-repeat fa-flip-vertical fa-xl" style="color: #ffe8d6;"></i>
                 </div>
             </div>
-            
-            
-
-            
-
-
     </div>
 </div>
 </div>
