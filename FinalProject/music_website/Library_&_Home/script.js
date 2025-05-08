@@ -8,10 +8,17 @@ let next_btn = document.querySelector('.next-track');
 let prev_btn = document.querySelector('.prev-track');
 
 let seek_slider = document.querySelector('.seek_slider');
+seek_slider.addEventListener('input', seekTo);
 let curr_time = document.querySelector('.current-time');
 let total_duration = document.querySelector('.total-duration');
 let randomIcon = document.querySelector('.fa-random');
 let curr_track = document.createElement('audio');
+
+function seekTo() {
+    let seekto = curr_track.duration * (seek_slider.value / 100);
+    curr_track.currentTime = seekto;
+}
+
 
 //keeps track of the current song being played
 let track_index = 0;
@@ -29,7 +36,7 @@ const music_list = [
         img : '/Users/pigeons/Desktop/Webdev-stuff/E25webdev/FinalProject/music_website/Library_&_Home/coverArt/98439.jpeg',
         name : 'Crazy In Love',
         artist : 'Beyonce,ft.JAY Z', 
-        music : '/Users/pigeons/Desktop/Webdev-stuff/E25webdev/FinalProject/music_website/Library_&_Home/MusicFiles/CrazyInLove.mp3',
+        music : 'MusicFiles/CrazyInLove.mp3',
         genre : 'Pop',
     },
 
@@ -96,6 +103,8 @@ function loadTrack(track_index){
     updateTimer = setInterval(setUpdate, 1000);
     //adds an event listener that triggers the nextTrack function when the current track finishes playing
     curr_track.addEventListener('ended', nextTrack);
+    console.log("Duration loaded:", curr_track.duration);
+
 
 }
 
@@ -168,6 +177,7 @@ function prevTrack(){
     loadTrack(track_index);
     playTrack();
 }
+
 
 //find why the song progress bar wont work
 function setUpdate(){
